@@ -48,10 +48,9 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+       <a href="https://www.facebook.com/chukz.itz" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://twitter.com/BethelOnwuka3" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.instagram.com/smartchuks19" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
 
     </div>
@@ -156,6 +155,24 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+                  Email.send({
+                Host : "smtp.gmail.com",
+                Username : "bethelonwuk19@gmail.com",
+                Password : "bet1love",
+                To : 'bethelonwuka19@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "NEW MESSAGES",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );      
+    }
+  </script>
+  
   <script src="assets/js/main.js"></script>
 
 </body>
