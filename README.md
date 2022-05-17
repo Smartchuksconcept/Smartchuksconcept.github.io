@@ -1,2 +1,0 @@
-# Smartchuksconcept.github.io
-SmartChuks
